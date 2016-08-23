@@ -1,0 +1,8 @@
+<h1>Thesaurus Entry Index</h1>
+
+<% @entries.each do |entry| %>
+<h1>Word: <%= entry.word %></h1>
+<li>Antonym: <%= entry.antonym %></li>
+<li>Synonym:<%= entry.synonym %></li>
+
+<% end %>

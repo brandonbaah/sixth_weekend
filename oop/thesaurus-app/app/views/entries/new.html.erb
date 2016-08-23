@@ -1,0 +1,20 @@
+<h1>Create New Thesaurus Word</h1>
+
+
+<%= form_tag("/entries", method: "post") do %>
+<div>
+<%= label_tag(:word) %>
+<%= text_field_tag(:word) %>
+</div>
+<div>
+<%= label_tag(:antonym) %>
+<%= text_field_tag(:antonym) %>
+</div>
+<div>
+<%= label_tag(:synonym) %>
+<%= text_field_tag(:synonym) %>
+</div>
+<div>
+  <%= submit_tag("Create") %>
+</div>
+<% end %>
